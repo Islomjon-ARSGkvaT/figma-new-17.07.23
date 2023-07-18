@@ -1,0 +1,123 @@
+.new-organic-info {
+  max-width: 90%;
+  margin: 0 auto;
+  &__right {
+    margin: 25px auto 50px;
+    h3 {
+      color: var(--text-text-secondary, #2b2b2b);
+      text-align: center;
+      font-size: 3.9rem;
+      font-weight: 600;
+      line-height: 49px;
+    }
+    h3 + p {
+      text-align: center;
+      margin: 16px auto 26px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      &__item {
+        display: flex;
+        gap: 23px;
+        .icon {
+          img {
+            width: 52px;
+          }
+        }
+
+        p {
+          max-width: 285px;
+          color: var(--color-brand-green, #285e67);
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 640px) {
+  .new-organic-info {
+    &__right {
+      &__info {
+        max-width: 550px;
+        margin: 0 auto;
+        &__item {
+          p {
+            max-width: 430px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 990px) {
+  .new-organic-info {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        max-width: 400px;
+        text-align: start;
+        color: var(--text-text-secondary, #2b2b2b);
+        font-family: Poppins;
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 62px; /* 122.724% */
+      }
+      h3 + p {
+        max-width: 429px;
+        text-align: start;
+        color: var(--text-text-primary, #2a2a2a);
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+      &__info {
+        max-width: 429px;
+        margin: 0;
+        gap: 23px;
+        &__item {
+          p {
+            max-width: 354px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .new-organic-info {
+    max-width: 1300px;
+    gap: 53px;
+    justify-content: start;
+    &__right {
+      padding-left: 0;
+      margin: 0;
+      h3 {
+        max-width: 623px;
+      }
+      h3 + p {
+        max-width: 623px;
+        margin: 31px 0 50px;
+        padding: 0;
+      }
+    }
+  }
+}

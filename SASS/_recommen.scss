@@ -1,0 +1,130 @@
+.recommen {
+  max-width: 90%;
+  margin: 36px auto;
+  background: $color-gray;
+  border-radius: 12px;
+  padding: 64px 16px 32px;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h2[phone] {
+      color: var(--text-text-secondary, #2b2b2b);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 3.9rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 53px; /* 133.501% */
+      margin-bottom: 14px;
+    }
+    .table {
+      display: none;
+    }
+    &__item {
+      margin-top: 26px;
+      img {
+        width: 58px;
+        height: 57px;
+      }
+      p {
+        max-width: 245px;
+        margin: 20px auto 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+  &__right {
+    display: none;
+  }
+}
+@media screen and (min-width: 640px) {
+  .recommen {
+    &__left {
+      h2[phone] {
+        display: none;
+      }
+      .table {
+        display: block;
+        color: var(--text-text-secondary, #2b2b2b);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 53px; /* 133.501% */
+        margin-bottom: 14px;
+      }
+      .recommen-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 30px;
+        p {
+          max-width: 230px;
+          margin: 20px auto 0;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 990px) {
+  .recommen {
+    margin: 80px auto;
+    &__left {
+      .recommen-info p {
+        max-width: 252px;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .recommen {
+    max-width: 1300px;
+    height: 446px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 104px auto;
+    &__left {
+      padding: 96px 0 69px 112px;
+      .table {
+        width: 589px;
+        color: var(--text-text-secondary, #2b2b2b);
+        font-family: Poppins;
+        font-size: 50.52px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 62px;
+      }
+      &__item {
+        align-items: start;
+        justify-content: start;
+        img {
+          margin: 0 auto 0 -190px;
+        }
+        p {
+          max-width: 260px;
+          text-align: start;
+        }
+      }
+    }
+    &__right {
+      display: block;
+      padding: 0;
+    }
+  }
+}

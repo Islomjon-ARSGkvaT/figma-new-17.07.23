@@ -1,0 +1,112 @@
+.health-recom {
+  max-width: 90%;
+  margin: 36px auto 690px;
+  border-radius: 12px;
+  background-image: url(../assets/fonts/helt-bac.png);
+  background-size: cover;
+  padding: 33px 66px 38.76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  &__top-text-i {
+    padding: 39px 0;
+    max-width: 236px;
+    img {
+      width: 46px;
+    }
+    h2 {
+      max-width: 200px;
+      margin: 13px auto;
+      color: #fff;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 21.33px;
+      font-weight: 600;
+      line-height: 31px; /* 145.335% */
+    }
+    p[phone] {
+      display: none;
+    }
+    a {
+      color: #fff;
+      padding: 16px 60px;
+      max-width: 198px;
+      border: 1px solid white;
+      border-radius: 14px;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16.33px;
+      font-weight: 600;
+      line-height: 24px;
+      display: block;
+    }
+  }
+  &__info-resp {
+    overflow: hidden;
+    width: 85%;
+    display: grid;
+    height: 701px;
+    flex-direction: column;
+    gap: 49px;
+    position: absolute;
+    background: $color-gray-red;
+    padding: 71px 0;
+    border-radius: 12px;
+    top: 290px;
+    &__item {
+      img {
+        width: 60px;
+      }
+      p {
+        margin-top: 18px;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 21.33px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 990px) {
+  .health-recom {
+    min-width: 884px;
+    margin: 36px auto 412px;
+    padding: 110px 66px 38.76px;
+    &__top-text-i {
+      max-width: 650px;
+      margin: 0 auto;
+      h2 {
+        max-width: 640px;
+        margin: 45px auto 12px;
+      }
+      p[phone] {
+        max-width: 650px;
+        display: block;
+        margin: 0 auto 28px;
+        color: #fff;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      a {
+        max-width: 257px;
+        margin: 0 auto;
+      }
+    }
+    &__info-resp {
+      height: 397px;
+      flex-direction: row-reverse;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 42px 49px;
+      top: 445px;
+    }
+  }
+}
