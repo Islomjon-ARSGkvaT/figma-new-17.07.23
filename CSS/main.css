@@ -421,6 +421,12 @@ header .hero__bot-img {
     max-width: 430px;
   }
 }
+@media screen and (min-width: 680px) {
+  .new-organic-info__left {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 990px) {
   .new-organic-info {
     max-width: 900px;
@@ -658,6 +664,22 @@ header .hero__bot-img {
   line-height: 24px;
 }
 
+@media screen and (min-width: 320px) {
+  .health-recom__top-text-i a {
+    padding: 16px 40px;
+  }
+  .health-recom__info-resp {
+    display: grid;
+    height: 701px;
+    flex-direction: column;
+    gap: 49px;
+    position: absolute;
+    background: #FCE2D7;
+    padding: 71px 0;
+    border-radius: 12px;
+    top: 300px;
+  }
+}
 @media screen and (min-width: 990px) {
   .health-recom {
     min-width: 884px;
