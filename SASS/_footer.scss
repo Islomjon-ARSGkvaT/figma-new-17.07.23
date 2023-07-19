@@ -76,3 +76,27 @@ footer {
     }
   }
 }
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 78px 0;
+    .link {
+      max-width: 1300px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      align-items: center;
+      &__item {
+        padding: 0;
+        margin: 0;
+        ul {
+          gap: 40px;
+        }
+      }
+    }
+    .link-global {
+      max-width: 1300px;
+      margin: 36px auto 0 auto;
+    }
+  }
+}
+
