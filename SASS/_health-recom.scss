@@ -110,3 +110,14 @@
     }
   }
 }
+@media screen and (min-width: 1440px) {
+  .health-recom {
+    max-width: 1300px;
+    margin: 104px auto 383px;
+    &__info-resp {
+      grid-template-columns: repeat(4, 1fr);
+      height: 356px;
+      padding: 119px 66px;
+    }
+  }
+}

@@ -696,6 +696,17 @@ header .hero__bot-img {
     top: 445px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .health-recom {
+    max-width: 1300px;
+    margin: 104px auto 383px;
+  }
+  .health-recom__info-resp {
+    grid-template-columns: repeat(4, 1fr);
+    height: 356px;
+    padding: 119px 66px;
+  }
+}
 footer {
   background: #285e67;
   padding: 78px 0;
@@ -767,6 +778,29 @@ footer .link-global a i {
     max-width: 880px;
     justify-content: start;
     gap: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 78px 0;
+  }
+  footer .link {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  footer .link__item {
+    padding: 0;
+    margin: 0;
+  }
+  footer .link__item ul {
+    gap: 40px;
+  }
+  footer .link-global {
+    max-width: 1300px;
+    margin: 36px auto 0 auto;
   }
 }
 
