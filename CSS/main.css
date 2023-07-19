@@ -133,7 +133,7 @@ header .hero_top-tex a {
   font-weight: 600;
   line-height: 24px;
   border-radius: 28px;
-  background-color: #285E67;
+  background-color: #285e67;
 }
 header .hero__bot-img {
   display: flex;
@@ -249,7 +249,7 @@ header .hero__bot-img {
 .recommen {
   max-width: 90%;
   margin: 36px auto;
-  background: #F4F4F4;
+  background: #f4f4f4;
   border-radius: 12px;
   padding: 64px 16px 32px;
 }
@@ -421,6 +421,12 @@ header .hero__bot-img {
     max-width: 430px;
   }
 }
+@media screen and (min-width: 680px) {
+  .new-organic-info__left {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 990px) {
   .new-organic-info {
     max-width: 900px;
@@ -488,7 +494,7 @@ header .hero__bot-img {
   max-width: 90%;
   margin: 0 auto;
   padding: 64px 16px 40px;
-  background: #F4F4F4;
+  background: #f4f4f4;
   border-radius: 12px;
   text-align: center;
 }
@@ -641,7 +647,7 @@ header .hero__bot-img {
   flex-direction: column;
   gap: 49px;
   position: absolute;
-  background: #FCE2D7;
+  background: #fce2d7;
   padding: 71px 0;
   border-radius: 12px;
   top: 290px;
@@ -658,6 +664,22 @@ header .hero__bot-img {
   line-height: 24px;
 }
 
+@media screen and (min-width: 320px) {
+  .health-recom__top-text-i a {
+    padding: 16px 40px;
+  }
+  .health-recom__info-resp {
+    display: grid;
+    height: 701px;
+    flex-direction: column;
+    gap: 49px;
+    position: absolute;
+    background: #fce2d7;
+    padding: 71px 0;
+    border-radius: 12px;
+    top: 300px;
+  }
+}
 @media screen and (min-width: 990px) {
   .health-recom {
     min-width: 884px;
@@ -694,6 +716,17 @@ header .hero__bot-img {
     grid-template-columns: repeat(2, 1fr);
     gap: 42px 49px;
     top: 445px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .health-recom {
+    max-width: 1300px;
+    margin: 104px auto 383px;
+  }
+  .health-recom__info-resp {
+    grid-template-columns: repeat(4, 1fr);
+    height: 356px;
+    padding: 119px 66px;
   }
 }
 footer {
@@ -769,5 +802,26 @@ footer .link-global a i {
     gap: 24px;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
+@media screen and (min-width: 1440px) {
+  footer {
+    padding: 78px 0;
+  }
+  footer .link {
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  footer .link__item {
+    padding: 0;
+    margin: 0;
+  }
+  footer .link__item ul {
+    gap: 40px;
+  }
+  footer .link-global {
+    max-width: 1300px;
+    margin: 36px auto 0 auto;
+  }
+}
