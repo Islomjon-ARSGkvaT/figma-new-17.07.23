@@ -56,6 +56,14 @@
     }
   }
 }
+@media screen and (min-width: 680px) {
+  .new-organic-info {
+    &__left {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  }
+}
 @media screen and (min-width: 990px) {
   .new-organic-info {
     max-width: 900px;
@@ -96,6 +104,7 @@
         &__item {
           p {
             max-width: 354px;
+            
           }
         }
       }
